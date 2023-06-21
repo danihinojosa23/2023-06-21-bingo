@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    background-color: #D8BFD8;
+    color: black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+#gerar {
+    background-color: rgb(173, 126, 173);
+    color: black;
+    height: 60px;
+    width: 160px;
+    border: 3px solid rgb(173, 126, 173);
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 20px;
+    margin: 50px 30px 0 0;
+    font-weight: bold;
+}
+
+#reiniciar {
+    background-color: rgb(138, 101, 138);
+    color: black;
+    height: 60px;
+    width: 160px;
+    border: 3px solid rgb(138, 101, 138);
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 20px;
+    margin: 50px 0 0 30px;
+    font-weight: bold;
+}
+
+#iniciar {
+    background-color: #b19cbe;
+    color: black;
+    height: 60px;
+    width: 160px;
+    border: 3px solid #b19cbe;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 20px;
+    margin: 50px;
+    font-weight: bold;
+}
+
+#numeros {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.container-numeros {
+    width: 30%;
+}
+
+.cartela-container {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.cartela {
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    border-collapse: collapse;
+}
+
+.cartela td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 35px;
+}
+
+.cartela td:not(:nth-child(6n)) {
+    border-right: none;
+}
+
+.cartela tr:not(:last-child) td {
+    border-bottom: none;
+}
+
+.cartela th {
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(139, 105, 124);
+}
+
+.sorteado {
+    background-color: rgb(162, 207, 162);
+}
+
+.numero-sorteado {
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+    background-color: lightgray;
+    border: 1px solid black;
+} 
+
+.jogador {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+h3 {
+    position: fixed;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D8BFD8;
+    color: black;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Bingo</title>
+</head>
+<body>
+    <header>
+        <h1>Bingo online!</h1>
+    </header>
+    <section>
+        <div class="container">
+            <div class="jogo">
+                <div>
+                    <button id="gerar" onclick="gerarCartela()">Gerar Cartela</button>
+                    <button id="reiniciar" onclick="reiniciarJogo()">Reiniciar</button>
+                </div>
+        
+                <main id="area-cartela">
+                   <div id="bingo-game">
+                       <div id="nome-jogador"></div>
+                       <div id="espaco-cartelas"></div>
+                   </div>
+                </main>
+            </div>
+                <div class="container-numeros">
+                    <button id="iniciar" onclick="iniciarJogo()">Iniciar Jogo</button>
+                    <h2>Números Sorteados:</h2>
+                    <div id="numeros-sorteados"></div>
+                </div>
+        </div>
+    </section>
+ <footer>
+    <h3>Developed by @danihinojosa23</h3>
+</footer>
+    <script src="index.js"></script>
+</body>
+</html>
